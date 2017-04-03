@@ -1,0 +1,11 @@
+version: '2'
+services:
+    gamesales-postgresql:
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/GameSales/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=GameSales
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
